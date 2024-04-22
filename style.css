@@ -11,13 +11,12 @@ body {
 .main-container {
     width: 90vw;
     height: 100vh;
-    border: 1px solid #000;
+    border: 1px solid black;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
 
-    
 }
 .sidebar {
     display: grid;
@@ -25,7 +24,7 @@ body {
     grid-template-rows: 50px 300px 200px;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color: #38bdf8;
+    background-color: #0891b2;
     gap: 2rem;
     padding-top: 1rem;
     padding-left: .5rem;
@@ -43,15 +42,122 @@ body {
 }
  
 .header {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr;
     grid-column: 2 / 3;
+    padding-left: 2rem;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    
     
 }
 .main {
     grid-column: 2 / 3;
 }
-img {
+.sidebar-container img {
     width: 50px;
     height: 50px;
     padding: 10px;
     filter: invert(100%) sepia(1%) saturate(689%) hue-rotate(345deg) brightness(113%) contrast(100%);
+}
+
+.search-bar {
+    color: #000;
+    background-color: #cbd5e1;
+    border-radius: 20px;
+    height: 1.5rem;
+   
+    
+}
+.header-first-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 0 6rem;
+     
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    align-content: start;
+    gap: 1rem;
+}
+.user-container {
+    display: grid;
+    grid-template-columns: 50px 80px 1fr;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.header img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+
+}
+
+img[alt="profile-picture"] {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    
+}
+.header-second-row {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-content: center;
+    
+
+}
+.second-row-firstcol {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 100px 1fr; 
+    align-items: center;
+    gap: 5px;
+        img {
+            width: 100px;
+            height: 100px;
+            padding: 15px;
+        }
+        p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        span {
+            font-weight: bold;
+        }
+}
+
+.second-row-secondcol {
+    display: grid;
+    grid-template-columns: 3rem 3rem 3rem;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 7rem;
+    
+
+        button {
+            width: 5rem;
+            height: 3rem;
+            background-color: #0891b2;
+            color: #fff;
+            font-size: 18px;
+            padding: 5px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 30px;
+            border: none;
+        }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10% 90%;
 }
