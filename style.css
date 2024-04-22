@@ -46,6 +46,7 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-column: 2 / 3;
     padding-left: 2rem;
+    box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.5) 
     
     
     
@@ -161,7 +162,7 @@ img[alt="profile-picture"] {
     grid-template-rows: 5% 90%;
     padding: 2rem;
     background-color: #ccfbf1;
-    box-shadow: 0px -5px -10px rgba(0, 0, 0, 0.5)
+    box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.5)
 }
 .all-projects {
     display: grid;
